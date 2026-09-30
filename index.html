@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Ground Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🏟️ Sports Ground Booking System</h1>
+</header>
+
+<section class="grounds">
+
+    <div class="card">
+        <h2>🏏 Cricket Ground</h2>
+        <p class="location">📍 Main Sports Block</p>
+        <p class="capacity">👥 Capacity: 22 Players</p>
+        <p id="cricketStatus" class="available">🟢 Available</p>
+    </div>
+
+    <div class="card">
+        <h2>⚽ Football Ground</h2>
+        <p class="location">📍 Outdoor Arena</p>
+        <p class="capacity">👥 Capacity: 20 Players</p>
+        <p id="footballStatus" class="booked">🔴 Booked</p>
+    </div>
+
+    <div class="card">
+        <h2>🏀 Basketball Court</h2>
+        <p class="location">📍 Indoor Stadium</p>
+        <p class="capacity">👥 Capacity: 10 Players</p>
+        <p id="basketballStatus" class="available">🟢 Available</p>
+    </div>
+
+</section>
+
+<section class="form-section">
+
+    <h2>Book a Ground</h2>
+
+    <form id="bookingForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Student Name"
+        >
+
+        <select id="ground">
+            <option value="">Select Ground</option>
+            <option>Cricket Ground</option>
+            <option>Football Ground</option>
+            <option>Basketball Court</option>
+        </select>
+        
+        <input
+            type="date"
+            id="date"
+        >
+
+        <button type="submit">
+            Submit Booking
+        </button>
+
+    </form>
+
+    <p id="message"></p>
+
+</section>
+
+<script src="index.js"></script>
+
+</body>
+</html>
